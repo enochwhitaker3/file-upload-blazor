@@ -11,3 +11,5 @@ jobs:
 
           # run image
           docker run -d enoch-test-blazor-thing
+
+          echo "made it to the end ╰(▔∀▔)╯ "
