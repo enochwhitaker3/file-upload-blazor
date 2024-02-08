@@ -11,7 +11,8 @@ jobs:
 
           # run image
           docker run -d \
-            -p 9111:8080 --name "enoch-test-blazor-thing" \
+            -p 9131:8080 \
+            --name "enoch-test-blazor-thing" \
             enoch-test-blazor-thing
 
           echo "made it to the end ╰(▔∀▔)╯ "
