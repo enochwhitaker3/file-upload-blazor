@@ -6,7 +6,8 @@
 web/wwwroot/uploads
 users.json
 
-# dotenv files
+# dotenv files 
+#added comment
 .env
 
 # User-specific files
