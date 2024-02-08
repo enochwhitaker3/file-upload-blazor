@@ -9,10 +9,13 @@ jobs:
           # build image
           docker build -t enoch-test-blazor-thing .
 
+          # delete previous image
+          docker rm -f enoch-test-blazor-thing || true
+
           # run image
           docker run -d \
             -p 9131:8080 \
-            --name "enoch-test-blazor-thing2" \
+            --name "enoch-test-blazor-thing" \
             enoch-test-blazor-thing
 
           echo "made it to the end ╰(▔∀▔)╯ "
