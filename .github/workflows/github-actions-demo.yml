@@ -10,7 +10,7 @@ jobs:
           docker build -t enoch-test-blazor-thing .
 
           # run image
-          docker run -d \
+          docker run -d\
           -p 3252:7856 --name "enoch-test-blazor-thing"\
           enoch-test-blazor-thing
 
